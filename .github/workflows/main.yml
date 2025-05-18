@@ -1,5 +1,5 @@
 name: CI
-run-name: CI for ${github.ref_name}
+run-name: CI for ${{github.ref_name}}
 on:
   pull_request: { branches: [ master ] }
   push:
@@ -11,5 +11,7 @@ jobs:
     steps:
       - name: Install Nix
         uses: cachix/install-nix-action@v31
+      - name: Check out repository code
+        uses: actions/checkout@v4
       - name: Run flake check
         run: nix flake check
