@@ -17,7 +17,7 @@ jobs:
         id: restore-cache
         uses: nix-community/cache-nix-action/restore@v6
         with:
-          primary-key: "cache-${{ hashFiles(flake.lock) }}"
+          primary-key: "cache-${{ hashFiles('flake.lock') }}"
       - name: Run flake check
         run: nix flake check
       - name: Save cache
