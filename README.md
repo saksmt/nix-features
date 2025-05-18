@@ -133,3 +133,8 @@ Example usage in flake (of course you can extract sections of those definitions 
 ## Docs
 
 For more info about available methods and general logic of features refer to [type definitions](src/typedefs.d.ts)
+
+
+## License
+
+All source code is licensed under [MIT license](./LICENSE)
