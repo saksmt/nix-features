@@ -19,7 +19,7 @@ flake.nix:
   inputs = {
     nixpkgs.url = "";
     
-    nix-features.url = "github:saksmt/nix-config?dir=shared-lib/nix-features";
+    nix-features.url = "github:saksmt/nix-features";
     nix-features.inputs.nixpkgs.follows = "nixpkgs";
   };
   
