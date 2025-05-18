@@ -7,11 +7,12 @@
   "nix": {
     "enabled": true
   },
-  "lockfileMaintenance": {
+  "lockFileMaintenance": {
     "enabled": true,
     "extends": "schedule:weekly"
   },
   "automerge": true,
   "ignoreTests": false,
-  "automergeType": "pr"
+  "automergeType": "pr",
+  "automergeStrategy": "rebase"
 }
